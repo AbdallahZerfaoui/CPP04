@@ -40,7 +40,7 @@ CXXFLAGS = -std=c++17 -Wall -Wextra -Werror -g
 # LDFLAGS =
 
 # Name of the final executable
-TARGET = ex02
+TARGET = ex00
 
 # Find all .cpp files in the current directory
 SOURCES = main.cpp src/Animal.cpp src/Dog.cpp src/Cat.cpp \
