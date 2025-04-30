@@ -11,7 +11,7 @@ class Animal
 
 	public:
 		Animal();
-		Animal(const Animal &type);
+		Animal(const std::string &type);
 		Animal(const Animal &other);
 		Animal &operator=(const Animal &other);
 		~Animal();
