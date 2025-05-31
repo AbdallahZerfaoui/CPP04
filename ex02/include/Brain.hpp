@@ -3,11 +3,7 @@
 
 #define IDEAS 100
 
-#include <iostream>
-#include <cstdlib>
-
-#include "Animal.hpp"
-
+#include <string>
 class Brain {
    public:
 	Brain();

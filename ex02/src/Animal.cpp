@@ -1,49 +1,54 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   AbstractAnimal.cpp                                 :+:      :+:    :+:   */
+/*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 16:39:58 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/05/01 11:25:11 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/06/01 00:34:38 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/AbstractAnimal.hpp"
+#include "../include/Animal.hpp"
 #include <iostream>
 #include <string>
 
-AbstractAnimal::AbstractAnimal():
-	_type("AbstractAnimal")
+Animal::Animal():
+	_type("Animal")
 {
-	std::cout << "AbstractAnimal default constructor called" << std::endl;
+	std::cout << "Animal default constructor called" << std::endl;
 	// this->_type = "Animal";
 }
 
-AbstractAnimal::AbstractAnimal(const std::string &type):
+Animal::Animal(const std::string &type):
 	_type(type)
 {
-	std::cout << "AbstractAnimal constructor called" << std::endl;
+	std::cout << "Animal constructor called" << std::endl;
 	// this->_type = type;
 }
 
-AbstractAnimal::AbstractAnimal(const AbstractAnimal &other):
+Animal::Animal(const Animal &other):
 	_type(other._type)
 {
-	std::cout << "AbstractAnimal copy constructor called" << std::endl;
+	std::cout << "Animal copy constructor called" << std::endl;
 	// this->_type = other._type;
 }
 
-AbstractAnimal &AbstractAnimal::operator=(const AbstractAnimal &other)
+Animal &Animal::operator=(const Animal &other)
 {
-	std::cout << "AbstractAnimal assignment operator called" << std::endl;
+	std::cout << "Animal assignment operator called" << std::endl;
 	if (this != &other)
 		this->_type = other._type;
 	return *this;
 }
 
-AbstractAnimal::~AbstractAnimal()
+Animal::~Animal()
 {
-	std::cout << "AbstractAnimal destructor called" << std::endl;
+	std::cout << "Animal destructor called" << std::endl;
+}
+
+std::string Animal::getType() const
+{
+	return _type;
 }
