@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 17:18:41 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/05/31 20:40:12 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/05/31 23:43:34 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@
 WrongAnimal::WrongAnimal():
 	_type("WrongAnimal")
 {
-	std::cout << "WrongAnimal default constructor called!" << std::endl;
+	std::cout << "WrongAnimal Default constructor called!" << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const std::string& type):
 	_type(type)
 {
-	std::cout << "Constructor with type as argument called " << std::endl;
+	std::cout << "WrongAnimal Constructor with type as argument called " << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal& other):
