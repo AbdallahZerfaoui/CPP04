@@ -6,13 +6,12 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 19:56:46 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/04/30 20:10:56 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/05/31 23:58:18 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Brain.hpp"
 #include <iostream>
-#include <cstdlib>
 #include <string>
 
 Brain::Brain():
