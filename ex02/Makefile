@@ -26,7 +26,7 @@ endif
 # =============================================================================
 
 # Compiler
-CXX = g++
+CXX = c++
 RM = rm -f
 
 # Compiler flags:
@@ -72,13 +72,14 @@ clean:
 # Rule to clean up generated files
 # .PHONY prevents 'make' from confusing this rule with a file named 'clean'
 fclean: clean
-	$(RM) $(TARGET) *.replace
+	$(RM) $(TARGET)
 
 re: art fclean $(TARGET)
 
 run: re
 	@echo "${GREEN}Running $(TARGET)...${RESET}"
 	./$(TARGET)
+	$(MAKE) fclean
 
 art:
 	@echo "        CCCCCCCCCCCCCPPPPPPPPPPPPPPPPP   PPPPPPPPPPPPPPPPP        000000000            444444444  "
