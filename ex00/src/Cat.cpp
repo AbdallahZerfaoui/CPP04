@@ -6,11 +6,12 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 16:40:02 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/04/30 16:46:38 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/05/31 20:40:12 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Cat.hpp"
+#include "../include/colors.hpp"
 #include <iostream>
 #include <string>
 
@@ -48,5 +49,5 @@ Cat::~Cat()
 // Make sound method
 void Cat::makeSound() const
 {
-	std::cout << "Meow Meoww" << std::endl;
+	std::cout <<CYAN<< "Meow Meoww" <<RESET<< std::endl;
 }

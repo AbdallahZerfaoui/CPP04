@@ -6,11 +6,14 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 17:18:47 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/04/30 17:29:03 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/05/31 20:41:21 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "../include/WrongCat.hpp"
+#include "../include/WrongCat.hpp"
+#include "../include/colors.hpp"
+#include <iostream>
+
 
 WrongCat::WrongCat(): WrongAnimal("WrongCat")
 {
@@ -44,5 +47,5 @@ WrongCat&	WrongCat::operator=(WrongCat const &other)
 
 void	WrongCat::makeSound() const
 {
-	std::cout << "Meaow Meaoww" << std::endl;
+	std::cout <<CYAN<< "Meaow Meaoww" <<RESET<< std::endl;
 }

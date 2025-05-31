@@ -6,11 +6,12 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 16:39:58 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/04/30 17:23:48 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/05/31 20:40:12 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Animal.hpp"
+#include "../include/colors.hpp"
 #include <iostream>
 #include <string>
 
@@ -51,7 +52,7 @@ Animal::~Animal()
 // Make sound method
 void Animal::makeSound() const
 {
-	std::cout << "General animal sound" << std::endl;
+	std::cout <<CYAN<< "General animal sound" <<RESET<< std::endl;
 }
 
 std::string Animal::getType() const

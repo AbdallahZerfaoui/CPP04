@@ -6,11 +6,13 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 17:18:41 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/04/30 17:28:42 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/05/31 20:40:12 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "../include/WrongAnimal.hpp"
+#include "../include/WrongAnimal.hpp"
+#include "../include/colors.hpp"
+#include <iostream>
 
 WrongAnimal::WrongAnimal():
 	_type("WrongAnimal")
@@ -45,7 +47,7 @@ WrongAnimal::~WrongAnimal()
 
 void	WrongAnimal::makeSound() const
 {
-	std::cout << "General WrongAnimal sound " << std::endl;
+	std::cout <<CYAN<< "General WrongAnimal sound " <<RESET<< std::endl;
 }
 
 std::string	WrongAnimal::getType() const

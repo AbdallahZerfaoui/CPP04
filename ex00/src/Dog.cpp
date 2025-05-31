@@ -6,11 +6,12 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 16:40:16 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/04/30 16:48:26 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/05/31 20:40:12 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Dog.hpp"
+#include "../include/colors.hpp"
 #include <iostream>
 #include <string>
 
@@ -48,5 +49,5 @@ Dog::~Dog()
 // Make sound method
 void Dog::makeSound() const
 {
-	std::cout << "Woof Wooff" << std::endl;
+	std::cout <<CYAN<< "Woof Wooff" << std::endl;
 }
