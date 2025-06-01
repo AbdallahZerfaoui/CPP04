@@ -12,7 +12,7 @@ class Cat : public Animal
 		Cat &operator=(const Cat &other);
 		~Cat();
 		
-		void makeSound() const;
+		void makeSound() const override;
 		void GenerateIdea(std::string const &idea);
 		void PrintIdea() const;
 
