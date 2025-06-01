@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 19:56:46 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/05/31 23:58:18 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/06/01 13:31:47 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,10 @@ Brain &Brain::operator=(Brain const &other)
 	{
 		ideaIndex = other.ideaIndex;
 		// Copy the ideas from the other Brain even the ones that are not used
-		for (int i = 0; i < IDEAS; i++)
+		for (int i = 0; i < ideaIndex; i++)
 			ideas[i] = other.ideas[i];
+		for (int i = ideaIndex; i < IDEAS; i++)
+			ideas[i].clear(); // Clear unused ideas
 	}
 	return *this;
 }

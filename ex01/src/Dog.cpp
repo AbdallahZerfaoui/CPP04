@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 16:40:16 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/06/01 00:26:14 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/06/01 13:43:04 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,10 @@
 #include <iostream>
 #include <string>
 
-Dog::Dog(): brain(new Brain())
+Dog::Dog()
 {
 	this->_type = "Dog";
+	brain = new Brain();
 	std::cout << "Dog default constructor called" << std::endl;
 }
 
@@ -43,9 +44,9 @@ Dog &Dog::operator=(const Dog &other)
 
 Dog::~Dog()
 {
+	std::cout << "Dog destructor called" << std::endl;
 	if (brain)
 		delete brain; // Clean up the brain memory
-	std::cout << "Dog destructor called" << std::endl;
 }
 
 // Make sound method

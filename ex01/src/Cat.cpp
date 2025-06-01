@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 16:40:02 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/06/01 00:26:57 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/06/01 13:44:09 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 #include <iostream>
 #include <string>
 
-Cat::Cat(): brain(new Brain())
+Cat::Cat(): Animal("Cat")
 {
-	this->_type = "Cat";
+	brain = new Brain();
 	std::cout << "Cat default constructor called" << std::endl;
 }
 
@@ -43,9 +43,9 @@ Cat &Cat::operator=(const Cat &other)
 
 Cat::~Cat()
 {
+	std::cout << "Cat destructor called" << std::endl;
 	if (brain)
 		delete brain; // Clean up the brain memory
-	std::cout << "Cat destructor called" << std::endl;
 }
 
 // Make sound method
