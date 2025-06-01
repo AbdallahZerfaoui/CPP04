@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 10:59:39 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/06/01 14:00:51 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/06/01 16:30:35 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int main() {
 	dog2.GenerateIdea("I should play!");
 	std::cout <<GREEN<< "Dog1" << RESET << std::endl;
 	dog1.PrintIdea();  // Should print "I should eat!"
-	std::cout <<GREEN<< "Dog1" << RESET << std::endl;
+	std::cout <<GREEN<< "Dog2" << RESET << std::endl;
 	dog2.PrintIdea();  // Should print "I should play!"
 	}
 	std::cout <<CYAN<< "\n--- Deep copy : copy constructor ---" <<RESET<< std::endl;
@@ -43,7 +43,7 @@ int main() {
 	dog2.GenerateIdea("I should play!");
 	std::cout <<GREEN<< "Dog1" << RESET << std::endl;
 	dog1.PrintIdea();  // Should print "I should eat!"
-	std::cout <<GREEN<< "Dog1" << RESET << std::endl;
+	std::cout <<GREEN<< "Dog2" << RESET << std::endl;
 	dog2.PrintIdea();  // Should print "I should play!"
 	}
     std::cout <<CYAN<< "\n--- Zoo ---"<< RESET << std::endl;

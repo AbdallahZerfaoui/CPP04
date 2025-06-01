@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 16:40:16 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/05/31 20:40:12 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/06/01 16:27:44 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ Dog::Dog(const std::string &type)
 	this->_type = type;
 }
 
-Dog::Dog(const Dog &other)
+Dog::Dog(const Dog &other): Animal(other)
 {
 	std::cout << "Dog copy constructor called" << std::endl;
 	this->_type = other._type;

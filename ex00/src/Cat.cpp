@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 16:40:02 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/05/31 20:40:12 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/06/01 16:28:09 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ Cat::Cat(const std::string &type)
 	this->_type = type;
 }
 
-Cat::Cat(const Cat &other)
+Cat::Cat(const Cat &other): Animal(other)
 {
 	std::cout << "Cat copy constructor called" << std::endl;
 	this->_type = other._type;

@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 16:49:11 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/05/31 23:45:03 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/06/01 16:28:48 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,9 @@ int main()
 	const WrongAnimal* wa = new WrongAnimal();
 	wc->makeSound();
 	wa->makeSound();
+
+	delete wc;
+	delete wa;
 
 	std::cout <<CYAN<< "---End of program---" <<RESET<< std::endl;
 	return 0;

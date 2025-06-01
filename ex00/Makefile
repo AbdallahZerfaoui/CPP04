@@ -76,6 +76,11 @@ fclean: clean
 
 re: art fclean $(TARGET)
 
+valgrind: re
+	@echo "${GREEN}Running Valgrind on $(TARGET)...${RESET}"
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(TARGET)
+	$(MAKE) fclean
+
 run: re
 	@echo "${GREEN}Running $(TARGET)...${RESET}"
 	./$(TARGET)
@@ -100,4 +105,4 @@ art:
 	@echo "        CCCCCCCCCCCCCPPPPPPPPPP          PPPPPPPPPP               000000000             4444444444"
 
 
-.PHONY: all clean fclean re art run
+.PHONY: all clean fclean re art run valgrind
