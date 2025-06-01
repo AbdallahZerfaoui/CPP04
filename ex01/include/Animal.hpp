@@ -3,7 +3,6 @@
 
 # include <string>
 
-//TODO: add unique messages to the constructors and destructors
 class Animal
 {
 	protected:
