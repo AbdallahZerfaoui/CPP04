@@ -43,7 +43,7 @@ CXXFLAGS = -std=c++17 -Wall -Wextra -Werror -g
 TARGET = ex02
 
 # Find all .cpp files in the current directory
-SOURCES = main.cpp src/AbstractAnimal.cpp src/Dog.cpp src/Cat.cpp \
+SOURCES = main.cpp src/Animal.cpp src/Dog.cpp src/Cat.cpp \
 		src/Brain.cpp
 # Generate corresponding object file names (replace .cpp with .o)
 OBJECTS = $(SOURCES:.cpp=.o)

@@ -1,11 +1,12 @@
 #ifndef BRAIN_HPP
-#define BRAIN_HPP
+# define BRAIN_HPP
 
-#define IDEAS 100
+# define IDEAS 100
 
-#include <string>
-class Brain {
-   public:
+# include <string>
+class Brain
+{
+  public:
 	Brain();
 	Brain(Brain const &other);
 	~Brain();
@@ -13,10 +14,10 @@ class Brain {
 	void GenerateIdea(std::string const &idea);
 	void PrintIdea() const;
 
-   protected:
+  protected:
 	std::string ideas[IDEAS];
 
-   private:
+  private:
 	int ideaIndex;
 };
 

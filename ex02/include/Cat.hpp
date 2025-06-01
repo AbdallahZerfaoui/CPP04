@@ -6,18 +6,18 @@
 
 class Cat : public Animal
 {
-	public:
-		Cat();
-		Cat(const Cat &other);
-		Cat &operator=(const Cat &other);
-		~Cat();
-		
-		void makeSound() const;
-		void GenerateIdea(std::string const &idea);
-		void PrintIdea() const;
+  public:
+	Cat();
+	Cat(const Cat &other);
+	Cat &operator=(const Cat &other);
+	~Cat();
 
-	private:
-		Brain *brain;
+	void makeSound() const override;
+	void GenerateIdea(std::string const &idea);
+	void PrintIdea() const;
+
+  private:
+	Brain *brain;
 };
 
 #endif
